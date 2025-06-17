@@ -3,38 +3,38 @@ import type { ExperienceItem } from '@/types/portfolio';
 import { Briefcase } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import Image from 'next/image';
+import Companylogo1 from '@/images/publicislogo.png';
+import Companylogo2 from '@/images/blacksociety.png';
 
 const experiences: ExperienceItem[] = [
   {
     id: 'exp1',
-    title: 'Senior Software Engineer',
-    company: 'Innovatech Solutions',
-    period: 'Jan 2021 - Present',
+    title: 'Infrastructure Admin Intern',
+    company: 'Publicis Re:Sources',
+    period: 'Jul 2024 - Aug 2024',
     responsibilities: [
-      'Led development of key features for a flagship SaaS product.',
-      'Mentored junior engineers and conducted code reviews.',
-      'Collaborated with cross-functional teams to define project scope and deliverables.',
-      'Optimized application performance, resulting in a 20% reduction in load times.',
+      'Assisted and comprehended in infrastructure administration, implementing cybersecurity best practices and conducting audits.',
+      ' Leverage Microsoft SCCM for system management and reporting.',
+      'Managed Microsoft Azure, ensuring compliance with security policy guidelines',
     ],
-    companyLogo: 'https://placehold.co/40x40.png',
+    companyLogo:Companylogo1.src,
   },
   {
     id: 'exp2',
-    title: 'Software Engineer',
-    company: 'Tech Startup Inc.',
-    period: 'Jun 2018 - Dec 2020',
+    title: 'Content Management Lead and Mentor',
+    company: 'Blacksociety',
+    period: 'Jun 2023 - Jun 2024',
     responsibilities: [
-      'Developed and maintained web applications using React and Node.js.',
-      'Participated in agile development cycles, including sprint planning and retrospectives.',
-      'Contributed to the design and implementation of RESTful APIs.',
+      "Led content generation for social media and articles, enhancing the club's digital presence.",
+      'Organized study sessions and mentored team members to build their skills.',
     ],
-    companyLogo: 'https://placehold.co/40x40.png',
+    companyLogo:Companylogo2.src,
   },
 ];
 
 export default function ExperienceSection() {
   return (
-    <Section id="experience" title="Professional Experience" icon={Briefcase} className="bg-muted/50">
+    <Section id="experience" title="Experience" icon={Briefcase} className="bg-muted/50">
       <div className="space-y-8">
         {experiences.map((exp) => (
           <Card key={exp.id} className="shadow-lg transition-all hover:shadow-xl">
@@ -50,8 +50,8 @@ export default function ExperienceSection() {
                   <Image 
                     src={exp.companyLogo} 
                     alt={`${exp.company} logo`} 
-                    width={40} 
-                    height={40} 
+                    width={80} 
+                    height={80} 
                     className="rounded-sm"
                     data-ai-hint="company logo"
                   />

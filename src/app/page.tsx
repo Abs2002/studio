@@ -5,7 +5,12 @@ import ExperienceSection from '@/components/portfolio/experience-section';
 import EducationSection from '@/components/portfolio/education-section';
 import SkillsSection from '@/components/portfolio/skills-section';
 import CertificationsSection from '@/components/portfolio/certifications-section';
-import BioGeneratorSection from '@/components/portfolio/bio-generator-section';
+import PublicationSection from '@/components/portfolio/publication-section';
+import ProjectSection from '@/components/portfolio/projects-section';
+import VolunteeringSection from '@/components/portfolio/volunteering-section';
+import LanguagesSection from '@/components/portfolio/languages-section';
+import SocialMediaSection from '@/components/portfolio/social-media-section';
+//import ContactSection from '@/components/portfolio/contact-section';
 
 export default function HomePage() {
   return (
@@ -14,10 +19,14 @@ export default function HomePage() {
       <main className="flex-grow">
         <AboutSection />
         <ExperienceSection />
-        <EducationSection />
-        <SkillsSection />
         <CertificationsSection />
-        <BioGeneratorSection />
+        <EducationSection />
+        <PublicationSection />
+        <SkillsSection />
+        <ProjectSection />
+        <VolunteeringSection />
+        <LanguagesSection />
+        <SocialMediaSection />
       </main>
       <AppFooter />
     </div>

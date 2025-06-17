@@ -13,7 +13,7 @@ export default function AppFooter() {
     <footer className="bg-muted py-8 text-center text-muted-foreground">
       <div className="container mx-auto px-4">
         <p className="text-sm">
-          &copy; {currentYear !== null ? currentYear : 'Loading...'} PersonaSite. All rights reserved.
+          &copy; {currentYear !== null ? currentYear : 'Loading...'} Anirudh Bishnoi. All rights reserved.
         </p>
         <p className="text-xs mt-1">
           Powered by Next.js & ShadCN UI
